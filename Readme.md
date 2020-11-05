@@ -1,3 +1,3 @@
-#Crawler de Notebooks
+# Crawler de Notebooks
 
-##Programa que faz busca de preços de alguns modelos de notebook no zoom e salva em um .doc
+## Programa que faz busca de preÃ§os de alguns modelos de notebook no zoom e salva em um .doc
