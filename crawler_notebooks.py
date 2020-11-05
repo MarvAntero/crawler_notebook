@@ -101,10 +101,22 @@ if __name__ == "__main__":
             save('descricao_e_precos_samsung.doc',lista_samsung)
 
         elif escolha == 3:
-            resposta = request(URL_ODYSSEY)
-            soup = parsing(resposta)
-            lista_samsung = buscar_descricao(soup)
-            graph_prices(lista_samsung[1])
+            a = input("Escolha : \na - Notebook Dell G5\nb - Notebook Samgung Odyssey")
+
+            if a == 'a':
+                resposta = request(URL_DELL_G5)
+                soup = parsing(resposta)
+                lista_dell = buscar_descricao(soup)
+                graph_prices(lista_dell[1])
+
+            elif a == 'b':
+                resposta = request(URL_ODYSSEY)
+                soup = parsing(resposta)
+                lista_samsung = buscar_descricao(soup)
+                graph_prices(lista_samsung[1])
+
+            else:
+                print("Insira opcao valida")
         elif escolha == 4:
             print("Bye")
             break
